@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peixes</title>
+<style>    
+    header{
+        background-color: #0681f3c0;
+        color: #000000;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        border: 1px solid #f66666;
+        padding: 20px;
+    }
+    main{
+        background-color: #fff5f5;
+        color: #000000;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 800px;
+        display: flex;
+
+    }
+
+    img{
+        width: 80px;
+        height: 80px;
+    }
+    .artigo-autor{
+        font-size: 12px;
+        color: #000000;
+        font-weight: bold;
+    }
+    article{
+        display: flex;
+    }
+</style>    
+</head>
+
+<body>
+    <header>
+        <img src="alce.png" alt="Teste de imagem">
+        <h1>Pescaria amanitos</h1>
+        <p>abacaxi</p>
+        <p class="artigo-autor">Por: Maurício de Souza</p>
+    </header>
+<article>
+    <main>
+    <div>
+        <img src="reprovada.jpg" alt="Teste de imagem">
+
+        <h2>Um 1kg de tomate ou um 1kg de cebola</h2>
+        <p>Não sei</p>
+        <button>💀 <span>0</span></button>
+        <button>🏴‍☠️ <span>0</span></button>
+        <p class="artigo-autor">Por: Maurício de Souza</p>
+    </div>
+    </main>
+</article>
+
+<article>
+    <main>
+    <div>
+        <img src="reprovada.jpg" alt="Teste de imagem">
+
+        <h2>Uma bandeira de pirata?</h2>
+        <p>NÃO!</p>
+        <button>💀 <span>0</span></button>
+        <button>🏴‍☠️ <span>0</span></button>
+        <p class="artigo-autor">Por: Maurício de Souza</p>
+    </div>
+    </main>
+</article>
+
+<article>
+    <main>
+    <div>
+        <img src="reprovada.jpg" alt="Teste de imagem">
+
+        <h2>Uma bandeira de pirata?</h2>
+        <p>NÃO!</p>
+        <button>💀 <span>0</span></button>
+        <button>🏴‍☠️ <span>0</span></button>
+        <p class="artigo-autor">Por: Maurício de Souza</p>
+    </div>
+    </main>
+</article>
+<script:src="script.js"></script>
+</body>
+<script>
+    const butijao = document.querySelectorAll('button');
+    let curtiu = false;
+    butijao.addEventlisener('click', ButijaoClicado);
+    function ButijaoClicado() {
+        console.log('click');
+        let texto = botao.querySelector("span");
+        if (curtiu === false) {
+            
+        }
+        texto.textContent++;
+    }
+</script>
+<link rel="stylesheet" href="style.css">
+</html>
