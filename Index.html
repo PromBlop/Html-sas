@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peixes</title>
-<style>    
+<style>   
+    body {
+        max-width: 100vw;
+
+    }
+
     header{
         background-color: #0681f3c0;
         color: #000000;
         text-align: center;
-        max-width: 800px;
         margin: 0 auto;
         border: 1px solid #f66666;
         padding: 20px;
@@ -17,11 +21,11 @@
     main{
         background-color: #fff5f5;
         color: #000000;
-        text-align: center;
         margin: 0 auto;
-        max-width: 800px;
-        display: flex;
+        padding: 20px;
 
+        display: flex;
+        flex-wrap: wrap;
     }
 
     img{
@@ -35,16 +39,30 @@
     }
     article{
         display: flex;
+
+        border: 1px solid #0062a3;
+
+        margin: 16px;
+        gap: 16px;
+        padding: 16px;
+
+        flex: 1 1 25%;
+
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
     }
+
 </style>    
 </head>
 
-<body>
+
     <header>
         <img src="alce.png" alt="Teste de imagem">
         <h1>Pescaria amanitos</h1>
         <p>abacaxi</p>
-        <p class="artigo-autor">Por: Maurício de Souza</p>
+        <p class="artigo-autor">Por: <a href="https://sitedochaves.com.br/mauriciodesouza" target="_blank">Abacate</a> </p>
     </header>
 <article>
     <main>
@@ -55,8 +73,27 @@
         <p>Não sei</p>
         <button>💀 <span>0</span></button>
         <button>🏴‍☠️ <span>0</span></button>
-        <p class="artigo-autor">Por: Maurício de Souza</p>
+        <p class="artigo-autor">Por: <a href="https://sitedochaves.com.br/mauriciodesouza" target="_blank">Maurício de Souza</a> </p>
     </div>
+    <button class="btn-tema-escuro">🌑</button>
+    </main>
+</article>
+
+<article>
+    <main>
+    <div>
+        <img src="Seco.jpg" alt="Teste de imagem">
+
+        <h2>Alisson CDS</h2>
+        <p>Crash
+        <br> <br> Mariçoca
+        <br> <br> Bora </p>
+
+        <button>🕵️ <span>0</span></button>
+        <button>🏴‍☠️ <span>0</span></button>
+        <p class="artigo-autor">Por: <a href="https://sitedochaves.com.br/tripaseca" target="_blank">Tripa Seca</a></p>
+    </div>
+    <button class="btn-tema-escuro">🌑</button>
     </main>
 </article>
 
@@ -66,29 +103,21 @@
         <img src="reprovada.jpg" alt="Teste de imagem">
 
         <h2>Uma bandeira de pirata?</h2>
-        <p>NÃO!</p>
+        <p>NÃO!
+        <br> <br> Voe meu fih </p>
+
         <button>💀 <span>0</span></button>
         <button>🏴‍☠️ <span>0</span></button>
-        <p class="artigo-autor">Por: Maurício de Souza</p>
+        <p class="artigo-autor">Por: <a href="https://sitedochaves.com.br/almanegra" target="_blank">Alma negra</a> </p>
     </div>
+
+        <button class="btn-tema-escuro">🌑</button>
     </main>
 </article>
 
-<article>
-    <main>
-    <div>
-        <img src="reprovada.jpg" alt="Teste de imagem">
-
-        <h2>Uma bandeira de pirata?</h2>
-        <p>NÃO!</p>
-        <button>💀 <span>0</span></button>
-        <button>🏴‍☠️ <span>0</span></button>
-        <p class="artigo-autor">Por: Maurício de Souza</p>
-    </div>
-    </main>
-</article>
-<script:src="script.js"></script>
 </body>
+<script:src="script.js"></script>
+
 <script>
     const butijao = document.querySelectorAll('button');
     let curtiu = false;
